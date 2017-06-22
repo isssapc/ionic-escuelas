@@ -13,6 +13,36 @@
 
       <ion-list>
         <ion-list-header>
+          Admin
+        </ion-list-header>
+        <button ion-item menuClose *ngFor="let p of adminPages" (click)="openPage(p)">
+          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+          {{p.title}}
+        </button>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header>
+          Docente
+        </ion-list-header>
+        <button ion-item menuClose *ngFor="let p of docentePages" (click)="openPage(p)">
+          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+          {{p.title}}
+        </button>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header>
+          Alumno
+        </ion-list-header>
+        <button ion-item menuClose *ngFor="let p of alumnoPages" (click)="openPage(p)">
+          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+          {{p.title}}
+        </button>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header>
           Navigate
         </ion-list-header>
         <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">

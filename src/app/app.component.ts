@@ -18,6 +18,16 @@ import { SupportPage } from '../pages/support/support';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+import { GruposAdminPage } from "../pages/admin/grupos-admin/grupos-admin";
+import { DocentesAdminPage } from "../pages/admin/docentes-admin/docentes-admin";
+import { AlumnosAdminPage } from "../pages/admin/alumnos-admin/alumnos-admin";
+import { ForosAlumnoPage } from "../pages/alumno/foros-alumno/foros-alumno";
+import { MensajesAlumnoPage } from "../pages/alumno/mensajes-alumno/mensajes-alumno";
+import { TareasAlumnoPage } from "../pages/alumno/tareas-alumno/tareas-alumno";
+import { CalendarioAlumnoPage } from "../pages/alumno/calendario-alumno/calendario-alumno";
+import { PerfilAlumnoPage } from "../pages/alumno/perfil-alumno/perfil-alumno";
+import { GruposDocentePage } from "../pages/docente/grupos-docente/grupos-docente";
+import { PerfilDocentePage } from "../pages/docente/perfil-docente/perfil-docente";
 
 export interface PageInterface {
   title: string;
@@ -41,6 +51,32 @@ export class ConferenceApp {
   // List of pages that can be navigated to from the left menu
   // the left menu only works after login
   // the login page disables the left menu
+
+  adminPages: PageInterface[] = [
+    { title: 'Grupos', name: 'GruposAdminPage', component: GruposAdminPage,  icon: 'calendar' },
+    { title: 'Alumnos', name: 'AlumnosAdminPage', component: AlumnosAdminPage,  icon: 'contacts' },
+    { title: 'Docentes', name: 'DocentesAdminPage', component: DocentesAdminPage,  icon: 'map' },
+  ];
+
+  docentePages: PageInterface[] = [
+    { title: 'Perfil', name: 'PerfilDocentePage', component: PerfilDocentePage,  icon: 'calendar' },
+    { title: 'Grupos', name: 'GruposDocentePage', component: GruposDocentePage,  icon: 'contacts' },
+  ];
+
+  alumnoPages: PageInterface[] = [
+    { title: 'Perfil', name: 'PerfilAlumnoPage', component: PerfilAlumnoPage,  icon: 'calendar' },
+    { title: 'Calendario', name: 'CalendarioAlumnoPage', component: CalendarioAlumnoPage,  icon: 'contacts' },
+    { title: 'Tareas', name: 'TareasAlumnoPage', component: TareasAlumnoPage,  icon: 'map' },
+    { title: 'Mensajes', name: 'MensajesAlumnoPage', component: MensajesAlumnoPage,  icon: 'map' },
+    { title: 'Foros', name: 'ForosAlumnoPage', component: ForosAlumnoPage,  icon: 'map' },
+  ];
+
+
+
+
+
+
+
   appPages: PageInterface[] = [
     { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
@@ -107,8 +143,8 @@ export class ConferenceApp {
     // tabs even if changing them from the menu
     if (this.nav.getActiveChildNav() && page.index != undefined) {
       this.nav.getActiveChildNav().select(page.index);
-    // Set the root of the nav with params if it's a tab index
-  } else {
+      // Set the root of the nav with params if it's a tab index
+    } else {
       this.nav.setRoot(page.name, params).catch((err: any) => {
         console.log(`Didn't set nav root: ${err}`);
       });

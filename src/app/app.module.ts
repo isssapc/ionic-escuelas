@@ -25,10 +25,21 @@ import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SupportPage } from '../pages/support/support';
-
+import { GruposAdminPage } from "../pages/admin/grupos-admin/grupos-admin";
+import { DocentesAdminPage } from "../pages/admin/docentes-admin/docentes-admin";
+import { AlumnosAdminPage } from "../pages/admin/alumnos-admin/alumnos-admin";
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
-
+import { ForosAlumnoPage } from "../pages/alumno/foros-alumno/foros-alumno";
+import { MensajesAlumnoPage } from "../pages/alumno/mensajes-alumno/mensajes-alumno";
+import { TareasAlumnoPage } from "../pages/alumno/tareas-alumno/tareas-alumno";
+import { CalendarioAlumnoPage } from "../pages/alumno/calendario-alumno/calendario-alumno";
+import { PerfilAlumnoPage } from "../pages/alumno/perfil-alumno/perfil-alumno";
+import { GruposDocentePage } from "../pages/docente/grupos-docente/grupos-docente";
+import { PerfilDocentePage } from "../pages/docente/perfil-docente/perfil-docente";
+import { NuevoGrupoAdminPage } from "../pages/admin/nuevo-grupo-admin/nuevo-grupo-admin";
+import { NuevoAlumnoAdminPage } from "../pages/admin/nuevo-alumno-admin/nuevo-alumno-admin";
+import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-docente-admin";
 
 @NgModule({
   declarations: [
@@ -46,7 +57,23 @@ import { UserData } from '../providers/user-data';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    GruposAdminPage,
+    DocentesAdminPage,
+    AlumnosAdminPage,
+
+    ForosAlumnoPage,
+    MensajesAlumnoPage,
+    TareasAlumnoPage,
+    CalendarioAlumnoPage,
+    PerfilAlumnoPage,
+    GruposDocentePage,
+    PerfilDocentePage,
+    NuevoGrupoAdminPage,
+    NuevoAlumnoAdminPage,
+    NuevoDocenteAdminPage
+
+
   ],
   imports: [
     BrowserModule,
@@ -65,7 +92,23 @@ import { UserData } from '../providers/user-data';
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: GruposAdminPage, name: 'GruposAdminPage', segment: 'grupos-admin' },
+        { component: DocentesAdminPage, name: 'DocentesAdminPage', segment: 'docentes-admin' },
+        { component: AlumnosAdminPage, name: 'AlumnosAdminPage', segment: 'alumnos-admin' },
+        
+        { component: ForosAlumnoPage, name: 'ForosAlumnoPage', segment: 'foros-alumno' },
+        { component: MensajesAlumnoPage, name: 'MensajesAlumnoPage', segment: 'mensaje-alumno' },
+        { component: TareasAlumnoPage, name: 'TareasAlumnoPage', segment: 'tareas-alumno' },
+        { component: CalendarioAlumnoPage, name: 'CalendarioAlumnoPage', segment: 'calendario-alumno' },
+        { component: PerfilAlumnoPage, name: 'PerfilAlumnoPage', segment: 'perfil-alumno' },
+        { component: GruposDocentePage, name: 'GruposDocentePage', segment: 'grupos-docente' },
+        { component: PerfilDocentePage, name: 'PerfilDocentePage', segment: 'perfil-docente' },
+        { component: NuevoGrupoAdminPage, name: 'NuevoGrupoAdminPage', segment: 'nuevo-grupo-admin' },
+        { component: NuevoAlumnoAdminPage, name: 'NuevoAlumnoAdminPage', segment: 'nuevo-alumno-admin' },
+        { component: NuevoDocenteAdminPage, name: 'NuevoDocenteAdminPage', segment: 'nuevo-docente-admin' }
+
+        
       ]
     }),
     IonicStorageModule.forRoot()
@@ -86,7 +129,21 @@ import { UserData } from '../providers/user-data';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    GruposAdminPage,
+    DocentesAdminPage,
+    AlumnosAdminPage,
+    ForosAlumnoPage,
+    MensajesAlumnoPage,
+    TareasAlumnoPage,
+    CalendarioAlumnoPage,
+    PerfilAlumnoPage,
+    GruposDocentePage,
+    PerfilDocentePage,
+    NuevoGrupoAdminPage,
+    NuevoAlumnoAdminPage,
+    NuevoDocenteAdminPage
+
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
