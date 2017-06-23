@@ -21,4 +21,8 @@ export class GruposDocentePage {
     console.log('ionViewDidLoad GruposDocentePage');
   }
 
+  gotoGrupoDocente(){
+    this.navCtrl.push("GrupoDocentePage");
+  }
+
 }

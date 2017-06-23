@@ -14,11 +14,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class GrupoDocentePage {
 
+  segmento:string="materias";
+  
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GrupoDocentePage');
   }
+
+gotoNuevoForo(){
+  this.navCtrl.push("NuevoForoDocentePage");
+}
+
+gotoMateriaDocente(){
+  this.navCtrl.push("MateriaDocentePage");
+}
+
+gotoNuevoMensajeDocente(){
+this.navCtrl.push("NuevoMensajeDocentePage");
+
+}
 
 }

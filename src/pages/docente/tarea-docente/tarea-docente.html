@@ -7,12 +7,34 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>tarea-docente</ion-title>
+    <ion-title>Tarea</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="editar()">
+        Editar
+      </button>
+       
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+
+    <ion-item>
+      <ion-label stacked>Descripcion</ion-label>
+      <ion-textarea name="descripcion" rows="6" required></ion-textarea>
+    </ion-item>
+  <ion-item>
+    <ion-label stacked>Fecha de Creaciòn</ion-label>
+    <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Fecha de entrega</ion-label>
+    <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
+  </ion-item>
+
+
 
 </ion-content>

@@ -7,12 +7,39 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>materia-docente</ion-title>
+    <ion-title>Materia uno</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="gotoNuevaTareaDocente()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list-header>
+    <h2>Lista de tareas</h2>
+  </ion-list-header>
+
+  <ion-list>
+    <button ion-item (click)="gotoTareaDocente()">
+    <h2>Titulo</h2>
+    <p>descripción</p>
+     </button>
+         <button ion-item>
+    <h2>Titulo</h2>
+    <p>descripción</p>
+     </button>
+         <button ion-item>
+    <h2>Titulo</h2>
+    <p>descripción</p>
+     </button>
+         <button ion-item>
+    <h2>Titulo</h2>
+    <p>descripción</p>
+     </button>
+  </ion-list>
 
 </ion-content>

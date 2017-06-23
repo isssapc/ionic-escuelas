@@ -40,6 +40,13 @@ import { PerfilDocentePage } from "../pages/docente/perfil-docente/perfil-docent
 import { NuevoGrupoAdminPage } from "../pages/admin/nuevo-grupo-admin/nuevo-grupo-admin";
 import { NuevoAlumnoAdminPage } from "../pages/admin/nuevo-alumno-admin/nuevo-alumno-admin";
 import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-docente-admin";
+import { GrupoDocentePage } from "../pages/docente/grupo-docente/grupo-docente";
+import { MateriaDocentePage } from "../pages/docente/materia-docente/materia-docente";
+import { NuevoForoDocentePage } from "../pages/docente/nuevo-foro-docente/nuevo-foro-docente";
+import { NuevaTareaDocentePage } from "../pages/docente/nueva-tarea-docente/nueva-tarea-docente";
+import { TareaDocentePage } from "../pages/docente/tarea-docente/tarea-docente";
+import { NuevoMensajeDocentePage } from "../pages/docente/nuevo-mensaje-docente/nuevo-mensaje-docente";
+
 
 @NgModule({
   declarations: [
@@ -71,7 +78,13 @@ import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-
     PerfilDocentePage,
     NuevoGrupoAdminPage,
     NuevoAlumnoAdminPage,
-    NuevoDocenteAdminPage
+    NuevoDocenteAdminPage,
+    GrupoDocentePage,
+    MateriaDocentePage,
+    NuevoForoDocentePage,
+    NuevaTareaDocentePage,
+    TareaDocentePage,
+    NuevoMensajeDocentePage
 
 
   ],
@@ -96,7 +109,7 @@ import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-
         { component: GruposAdminPage, name: 'GruposAdminPage', segment: 'grupos-admin' },
         { component: DocentesAdminPage, name: 'DocentesAdminPage', segment: 'docentes-admin' },
         { component: AlumnosAdminPage, name: 'AlumnosAdminPage', segment: 'alumnos-admin' },
-        
+
         { component: ForosAlumnoPage, name: 'ForosAlumnoPage', segment: 'foros-alumno' },
         { component: MensajesAlumnoPage, name: 'MensajesAlumnoPage', segment: 'mensaje-alumno' },
         { component: TareasAlumnoPage, name: 'TareasAlumnoPage', segment: 'tareas-alumno' },
@@ -106,9 +119,14 @@ import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-
         { component: PerfilDocentePage, name: 'PerfilDocentePage', segment: 'perfil-docente' },
         { component: NuevoGrupoAdminPage, name: 'NuevoGrupoAdminPage', segment: 'nuevo-grupo-admin' },
         { component: NuevoAlumnoAdminPage, name: 'NuevoAlumnoAdminPage', segment: 'nuevo-alumno-admin' },
-        { component: NuevoDocenteAdminPage, name: 'NuevoDocenteAdminPage', segment: 'nuevo-docente-admin' }
+        { component: NuevoDocenteAdminPage, name: 'NuevoDocenteAdminPage', segment: 'nuevo-docente-admin' },
+        { component: GrupoDocentePage, name: 'GrupoDocentePage', segment: 'grupo-docente' },
+        { component: MateriaDocentePage, name: 'MateriaDocentePage', segment: 'materia-docente' },
+        { component: NuevoForoDocentePage, name: 'NuevoForoDocentePage', segment: 'Nuevo-foro-docente' },
+        { component: NuevaTareaDocentePage, name: 'NuevaTareaDocentePage', segment: 'nueva-tarea-docente' },
+        { component: TareaDocentePage, name: 'TareaDocentePage', segment: 'nueva-tarea-docente' },
+        { component: NuevoMensajeDocentePage, name: 'NuevoMensajeDocentePage', segment: 'nuevo-mensaje-docente' },
 
-        
       ]
     }),
     IonicStorageModule.forRoot()
@@ -142,7 +160,14 @@ import { NuevoDocenteAdminPage } from "../pages/admin/nuevo-docente-admin/nuevo-
     PerfilDocentePage,
     NuevoGrupoAdminPage,
     NuevoAlumnoAdminPage,
-    NuevoDocenteAdminPage
+    NuevoDocenteAdminPage,
+    GrupoDocentePage,
+    MateriaDocentePage,
+    NuevoForoDocentePage,
+    NuevaTareaDocentePage,
+    TareaDocentePage,
+    NuevoMensajeDocentePage
+
 
   ],
   providers: [
