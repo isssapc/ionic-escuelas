@@ -20,5 +20,9 @@ export class CalendarioAlumnoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CalendarioAlumnoPage');
   }
+  
+  gotoDiaCalendarioAlumno(){
+    this.navCtrl.push("DiaCalendarioAlumnoPage");
+  }
 
 }

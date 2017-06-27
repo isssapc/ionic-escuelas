@@ -8,11 +8,61 @@
 
   <ion-navbar>
     <ion-title>perfil-alumno</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="editar()">
+        Editar
+      </button>
+
+    </ion-buttons>
+
   </ion-navbar>
+
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nombre</ion-label>
+      <ion-input placeholder="Fernandez Castañòn Hernandez"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label stacked>Grado</ion-label>
+          <ion-input placeholder="4"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+      <ion-item>
+        <ion-label stacked>Grupo</ion-label>
+        <ion-input placeholder="B"></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-item>
+      <ion-label stacked>Fecha de nacimiento</ion-label>
+      <ion-input placeholder="20 de junio de 2010"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CURP</ion-label>
+      <ion-input placeholder="FCH200274CHM04"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Gènero</ion-label>
+      <ion-input placeholder="Masculino"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full>Aceptar</button>
+
+
 
 </ion-content>

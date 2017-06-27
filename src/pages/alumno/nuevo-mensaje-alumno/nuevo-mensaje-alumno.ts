@@ -2,31 +2,23 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MensajesAlumnoPage page.
+ * Generated class for the NuevoMensajeAlumnoPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-mensajes-alumno',
-  templateUrl: 'mensajes-alumno.html',
+  selector: 'page-nuevo-mensaje-alumno',
+  templateUrl: 'nuevo-mensaje-alumno.html',
 })
-export class MensajesAlumnoPage {
+export class NuevoMensajeAlumnoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MensajesAlumnoPage');
-  }
-
-  gotoNuevoMensajeAlumno(){
-    this.navCtrl.push("NuevoMensajeAlumnoPage");
-  }
-
-  gotoMensajeAlumno(){
-    this.navCtrl.push("MensajeAlumnoPage");
+    console.log('ionViewDidLoad NuevoMensajeAlumnoPage');
   }
 
 }

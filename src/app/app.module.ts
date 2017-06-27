@@ -46,6 +46,10 @@ import { NuevoForoDocentePage } from "../pages/docente/nuevo-foro-docente/nuevo-
 import { NuevaTareaDocentePage } from "../pages/docente/nueva-tarea-docente/nueva-tarea-docente";
 import { TareaDocentePage } from "../pages/docente/tarea-docente/tarea-docente";
 import { NuevoMensajeDocentePage } from "../pages/docente/nuevo-mensaje-docente/nuevo-mensaje-docente";
+import { DiaCalendarioAlumnoPage } from "../pages/alumno/dia-calendario-alumno/dia-calendario-alumno";
+import { TareaAlumnoPage } from "../pages/alumno/tarea-alumno/tarea-alumno";
+import { NuevoMensajeAlumnoPage } from "../pages/alumno/nuevo-mensaje-alumno/nuevo-mensaje-alumno";
+import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno";
 
 
 @NgModule({
@@ -84,7 +88,13 @@ import { NuevoMensajeDocentePage } from "../pages/docente/nuevo-mensaje-docente/
     NuevoForoDocentePage,
     NuevaTareaDocentePage,
     TareaDocentePage,
-    NuevoMensajeDocentePage
+    NuevoMensajeDocentePage,
+    DiaCalendarioAlumnoPage,
+    TareaAlumnoPage,
+    NuevoMensajeAlumnoPage,
+    MensajeAlumnoPage
+    
+    
 
 
   ],
@@ -126,6 +136,10 @@ import { NuevoMensajeDocentePage } from "../pages/docente/nuevo-mensaje-docente/
         { component: NuevaTareaDocentePage, name: 'NuevaTareaDocentePage', segment: 'nueva-tarea-docente' },
         { component: TareaDocentePage, name: 'TareaDocentePage', segment: 'nueva-tarea-docente' },
         { component: NuevoMensajeDocentePage, name: 'NuevoMensajeDocentePage', segment: 'nuevo-mensaje-docente' },
+        { component: DiaCalendarioAlumnoPage, name: 'DiaCalendarioAlumnoPage', segment: 'dia-calendario-alumno' },
+        { component: TareaAlumnoPage, name: 'TareaAlumnoPage', segment: 'tarea-alumno' },
+        { component: NuevoMensajeAlumnoPage, name: 'NuevoMensajeAlumnoPage', segment: 'Nuevo-mensaje-alumno' },
+        { component: MensajeAlumnoPage, name: 'MensajeAlumnoPage', segment: 'mensaje-alumno' },
 
       ]
     }),
@@ -166,7 +180,15 @@ import { NuevoMensajeDocentePage } from "../pages/docente/nuevo-mensaje-docente/
     NuevoForoDocentePage,
     NuevaTareaDocentePage,
     TareaDocentePage,
-    NuevoMensajeDocentePage
+    NuevoMensajeDocentePage,
+    DiaCalendarioAlumnoPage,
+    TareaAlumnoPage,
+    NuevoMensajeAlumnoPage,
+    MensajeAlumnoPage
+        
+
+    
+    
 
 
   ],

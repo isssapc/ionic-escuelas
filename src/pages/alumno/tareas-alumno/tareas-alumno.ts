@@ -21,4 +21,8 @@ export class TareasAlumnoPage {
     console.log('ionViewDidLoad TareasAlumnoPage');
   }
 
+  gotoTareaAlumno(){
+    this.navCtrl.push("TareaAlumnoPage");
+  }
+
 }
