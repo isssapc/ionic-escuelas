@@ -50,6 +50,9 @@ import { DiaCalendarioAlumnoPage } from "../pages/alumno/dia-calendario-alumno/d
 import { TareaAlumnoPage } from "../pages/alumno/tarea-alumno/tarea-alumno";
 import { NuevoMensajeAlumnoPage } from "../pages/alumno/nuevo-mensaje-alumno/nuevo-mensaje-alumno";
 import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno";
+import { ForoAlumnoPage } from "../pages/alumno/foro-alumno/foro-alumno";
+import { ConversacionForoAlumnoPage } from "../pages/alumno/conversacion-foro-alumno/conversacion-foro-alumno";
+import { NuevoMensajeForoAlumnoPage } from "../pages/alumno/nuevo-mensaje-foro-alumno/nuevo-mensaje-foro-alumno";
 
 
 @NgModule({
@@ -92,7 +95,10 @@ import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno
     DiaCalendarioAlumnoPage,
     TareaAlumnoPage,
     NuevoMensajeAlumnoPage,
-    MensajeAlumnoPage
+    MensajeAlumnoPage,
+    ForoAlumnoPage,
+    ConversacionForoAlumnoPage,
+    NuevoMensajeForoAlumnoPage
     
     
 
@@ -140,6 +146,11 @@ import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno
         { component: TareaAlumnoPage, name: 'TareaAlumnoPage', segment: 'tarea-alumno' },
         { component: NuevoMensajeAlumnoPage, name: 'NuevoMensajeAlumnoPage', segment: 'Nuevo-mensaje-alumno' },
         { component: MensajeAlumnoPage, name: 'MensajeAlumnoPage', segment: 'mensaje-alumno' },
+        { component: ForoAlumnoPage, name: 'ForoAlumnoPage', segment: 'foro-alumno' },
+        { component: ConversacionForoAlumnoPage, name: 'ConversacionForoAlumnoPage', segment: 'conversacion-foro-alumno' },
+        { component: NuevoMensajeForoAlumnoPage, name: 'NuevoMensajeForoAlumnoPage', segment: 'nuevo-mensaje-foro-alumno' },
+
+
 
       ]
     }),
@@ -184,7 +195,10 @@ import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno
     DiaCalendarioAlumnoPage,
     TareaAlumnoPage,
     NuevoMensajeAlumnoPage,
-    MensajeAlumnoPage
+    MensajeAlumnoPage,
+    ForoAlumnoPage,
+    ConversacionForoAlumnoPage,
+    NuevoMensajeForoAlumnoPage
         
 
     

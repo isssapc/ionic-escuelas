@@ -8,12 +8,44 @@
 
   <ion-navbar>
     <ion-title>foro-alumno</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="gotoNuevoMensajeForoAlumno()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list>
+    <button ion-item (click)="gotoConversacionForoAlumno()">
+      <ion-icon class="icon-50" name="mail" item-start></ion-icon> 
+    <h2>Promedio final para el 6°A</h2>
+    <h3>14 mensajes</h3>
+    <p>20 junio - último mensaje</p>
+  </button>
+     <button ion-item>
+      <ion-icon class="icon-50" name="mail" item-start></ion-icon> 
+    <h2>Convocatoria para el proximo torneo de futbol</h2>
+    <h3>18 mensajes</h3>
+    <p>25 junio - último mensaje</p>
+  </button>
+     <button ion-item>
+      <ion-icon class="icon-50" name="mail" item-start></ion-icon> 
+    <h2>Actividades culturales para las próximas vacaciones</h2>
+    <h3>5 mensajes</h3>
+    <p>28 junio - último mensaje</p>
+  </button>
+     <button ion-item>
+      <ion-icon class="icon-50" name="mail" item-start></ion-icon> 
+    <h2>Hola amigos del 5°B</h2>
+    <h3>21 mensajes</h3>
+    <p>20 junio - último mensaje</p>
+  </button>
+  </ion-list>
 
 
 </ion-content>

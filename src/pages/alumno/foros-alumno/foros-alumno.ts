@@ -21,4 +21,8 @@ export class ForosAlumnoPage {
     console.log('ionViewDidLoad ForosAlumnoPage');
   }
 
+  gotoForoAlumno(){
+    this.navCtrl.push("ForoAlumnoPage");
+  }
+
 }
