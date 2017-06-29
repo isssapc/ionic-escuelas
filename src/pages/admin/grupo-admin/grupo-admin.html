@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>grupo-admin</ion-title>
+    <ion-title>Grupo</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,25 @@
 
 <ion-content padding>
 
-</ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Docente asignado</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="d1">Docente 1</ion-option>
+        <ion-option value="d2">Docente 2</ion-option>
+        <ion-option value="d3">Docente 3</ion-option>
+        <ion-option value="d4">Docente 4</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Aula Asignada</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="a1">Aula 1</ion-option>
+        <ion-option value="a2">Aula 2</ion-option>
+        <ion-option value="a3">Aula 3</ion-option>
+        <ion-option value="a4">Aula 4</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  </ion-content>

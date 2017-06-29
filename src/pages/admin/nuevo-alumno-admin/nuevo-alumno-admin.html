@@ -7,12 +7,54 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>nuevo-alumno-admin</ion-title>
+    <ion-title>Nuevo alumno</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Nombre del alumno</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label stacked>Fecha de nacimiento</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CURP</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Género</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="Femenino">Femenino</ion-option>
+        <ion-option value="Masculino">Masculino</ion-option>
+      </ion-select>
+    </ion-item>
+
+     <ion-item>
+      <ion-label stacked>Grupo</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="Grupo 1">Grupo 1</ion-option>
+        <ion-option value="Grupo 2">Grupo 2</ion-option>
+        <ion-option value="Grupo 3">Grupo 3</ion-option>
+        <ion-option value="Grupo 4">Grupo 4</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+
+
+  <div padding>
+    <button ion-button full>Aceptar</button>
+  </div>
 
 </ion-content>

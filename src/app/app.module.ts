@@ -53,6 +53,8 @@ import { MensajeAlumnoPage } from "../pages/alumno/mensaje-alumno/mensaje-alumno
 import { ForoAlumnoPage } from "../pages/alumno/foro-alumno/foro-alumno";
 import { ConversacionForoAlumnoPage } from "../pages/alumno/conversacion-foro-alumno/conversacion-foro-alumno";
 import { NuevoMensajeForoAlumnoPage } from "../pages/alumno/nuevo-mensaje-foro-alumno/nuevo-mensaje-foro-alumno";
+import { GrupoAdminPage } from "../pages/admin/grupo-admin/grupo-admin";
+import { AlumnoAdminPage } from "../pages/admin/alumno-admin/alumno-admin";
 
 
 @NgModule({
@@ -98,7 +100,9 @@ import { NuevoMensajeForoAlumnoPage } from "../pages/alumno/nuevo-mensaje-foro-a
     MensajeAlumnoPage,
     ForoAlumnoPage,
     ConversacionForoAlumnoPage,
-    NuevoMensajeForoAlumnoPage
+    NuevoMensajeForoAlumnoPage,
+    GrupoAdminPage,
+    AlumnoAdminPage
     
     
 
@@ -149,6 +153,9 @@ import { NuevoMensajeForoAlumnoPage } from "../pages/alumno/nuevo-mensaje-foro-a
         { component: ForoAlumnoPage, name: 'ForoAlumnoPage', segment: 'foro-alumno' },
         { component: ConversacionForoAlumnoPage, name: 'ConversacionForoAlumnoPage', segment: 'conversacion-foro-alumno' },
         { component: NuevoMensajeForoAlumnoPage, name: 'NuevoMensajeForoAlumnoPage', segment: 'nuevo-mensaje-foro-alumno' },
+        { component: GrupoAdminPage, name: 'GrupoAdminPage', segment: 'grupo-admin' },
+        { component: AlumnoAdminPage, name: 'AlumnoAdminPage', segment: 'alumno-admin' },
+
 
 
 
@@ -198,7 +205,9 @@ import { NuevoMensajeForoAlumnoPage } from "../pages/alumno/nuevo-mensaje-foro-a
     MensajeAlumnoPage,
     ForoAlumnoPage,
     ConversacionForoAlumnoPage,
-    NuevoMensajeForoAlumnoPage
+    NuevoMensajeForoAlumnoPage,
+    GrupoAdminPage,
+    AlumnoAdminPage
         
 
     

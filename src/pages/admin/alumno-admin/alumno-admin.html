@@ -7,12 +7,53 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>alumno-admin</ion-title>
+    <ion-title>Alumno</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+   <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nombre</ion-label>
+      <ion-input placeholder="José Pedro Velasco Ramirez"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Grado y grupo</ion-label>
+      <ion-input placeholder="1°A"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Fecha de nacimiento</ion-label>
+      <ion-input placeholder="20 de junio de 2010"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CURP</ion-label>
+      <ion-input placeholder="FCH200274CHM04"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Gènero</ion-label>
+      <ion-input placeholder="Masculino"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Docente asignado</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="d1">Docente 1</ion-option>
+        <ion-option value="d2">Docente 2</ion-option>
+        <ion-option value="d3">Docente 3</ion-option>
+        <ion-option value="d4">Docente 4</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full>Aceptar</button>
 
 </ion-content>

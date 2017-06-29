@@ -25,4 +25,8 @@ export class AlumnosAdminPage {
     this.navCtrl.push("NuevoAlumnoAdminPage");
   }
 
+  gotoAlumnoAdmin(){
+    this.navCtrl.push("AlumnoAdminPage");
+  }
+
 }

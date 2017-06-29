@@ -26,4 +26,8 @@ export class GruposAdminPage {
     this.navCtrl.push("NuevoGrupoAdminPage");
   }
 
+  gotoGrupoAdmin(){
+    this.navCtrl.push("GrupoAdminPage")
+  }
+
 }
