@@ -8,7 +8,13 @@
 
   <ion-navbar>
     <ion-title>Grupo</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="gotoMateriaAdmin()">
+        Más materias
+      </button>
+    </ion-buttons>
   </ion-navbar>
+
 
 </ion-header>
 
@@ -26,6 +32,7 @@
         <ion-option value="d4">Docente 4</ion-option>
       </ion-select>
     </ion-item>
+
     <ion-item>
       <ion-label stacked>Aula Asignada</ion-label>
       <ion-select [(ngModel)]="gaming">
@@ -35,5 +42,13 @@
         <ion-option value="a4">Aula 4</ion-option>
       </ion-select>
     </ion-item>
+
   </ion-list>
-  </ion-content>
+
+  <div padding>
+    <button ion-button full>Aceptar</button>
+  </div>
+
+
+
+</ion-content>

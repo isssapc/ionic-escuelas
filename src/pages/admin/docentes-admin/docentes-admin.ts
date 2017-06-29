@@ -25,4 +25,8 @@ export class DocentesAdminPage {
     this.navCtrl.push("NuevoDocenteAdminPage");
   }
 
+  gotoDocenteAdmin(){
+    this.navCtrl.push("DocenteAdminPage");
+  }
+
 }

@@ -1,0 +1,37 @@
+<!--
+  Generated template for the MateriaAdminPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Administra de materias</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Nombre de la materia</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Docente asignado</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="d1">Docente 1</ion-option>
+        <ion-option value="d2">Docente 2</ion-option>
+        <ion-option value="d3">Docente 3</ion-option>
+        <ion-option value="d4">Docente 4</ion-option>
+      </ion-select>
+    </ion-item>
+    <div padding>
+      <button ion-button full>Aceptar</button>
+    </div>
+  </ion-list>
+
+</ion-content>

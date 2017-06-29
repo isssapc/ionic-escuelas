@@ -15,4 +15,52 @@
 
 <ion-content padding>
 
+   <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nombre</ion-label>
+      <ion-input placeholder="José Pedro Velasco Ramirez"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Profesiòn</ion-label>
+      <ion-input placeholder="Licenciatura en Matematicas"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Fecha de nacimiento</ion-label>
+      <ion-input placeholder="20 de ferbrero de 1972"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CURP</ion-label>
+      <ion-input placeholder="FCH200274CHM04"></ion-input>
+    </ion-item>
+
+   <ion-item>
+      <ion-label stacked>Género</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="m">Masculino</ion-option>
+        <ion-option value="f">Femenino</ion-option>
+       
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Grupo asignado</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="d1">Grupo 1</ion-option>
+        <ion-option value="d2">Grupo 2</ion-option>
+        <ion-option value="d3">Grupo 3</ion-option>
+        <ion-option value="d4">Grupo 4</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button full>Aceptar</button>
+  </div>
+
+
 </ion-content>
