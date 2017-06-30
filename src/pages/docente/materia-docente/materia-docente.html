@@ -7,7 +7,10 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Materia uno</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Materia</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="gotoNuevaTareaDocente()">
         <ion-icon name="add"></ion-icon>
@@ -24,22 +27,34 @@
   </ion-list-header>
 
   <ion-list>
-    <button ion-item (click)="gotoTareaDocente()">
-    <h2>Titulo</h2>
-    <p>descripción</p>
-     </button>
-         <button ion-item>
-    <h2>Titulo</h2>
-    <p>descripción</p>
-     </button>
-         <button ion-item>
-    <h2>Titulo</h2>
-    <p>descripción</p>
-     </button>
-         <button ion-item>
-    <h2>Titulo</h2>
-    <p>descripción</p>
-     </button>
+     <ion-item (click)="gotoTareaDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Exposición</h2>
+        <p>Realizar una exposición con el tema asignado</p>
+      </ion-item>
+      <ion-item (click)="gotoTareaDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Resumen</h2>
+        <p>Resumen de la pag. 47 del libro de ciencias naturales</p>
+      </ion-item>
+      <ion-item (click)="gotoTareaDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Ensayo</h2>
+        <p>Ensayo sobre la patria mexicana</p>
+      </ion-item>
+      <ion-item (click)="gotoTareaDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Matematicas</h2>
+        <p>Fraciones</p>
+      </ion-item>
   </ion-list>
 
 </ion-content>

@@ -7,8 +7,13 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons start>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
     <ion-title>Grupos</ion-title>
-        <ion-buttons end>
+    <ion-buttons end>
       <button ion-button icon-only (click)="gotoNuevoGrupoAdmin()">
         <ion-icon name="add"></ion-icon>
       </button>
@@ -20,18 +25,32 @@
 
 <ion-content>
 
-  <ion-list> 
-    <button ion-item (click)="gotoGrupoAdmin()">
-Grupo 1
-    </button>
- 
-    <button ion-item>
-Grupo 2
-    </button>
+  <ion-list no-lines>
+    <ion-item (click)="gotoGrupoAdmin()">
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+      </ion-avatar>
+      Grupo 1
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+      </ion-avatar>
+      Grupo 2
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+      </ion-avatar>
+      Grupo 3
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+      </ion-avatar>
+      Grupo 4
+    </ion-item>
 
-    <button ion-item>
-Grupo 3
-    </button>
   </ion-list>
 
 </ion-content>

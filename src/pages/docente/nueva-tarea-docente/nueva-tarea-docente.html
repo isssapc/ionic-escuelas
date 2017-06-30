@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Nueva tarea</ion-title>
   </ion-navbar>
 
@@ -14,7 +17,11 @@
 
 
 <ion-content padding>
-  
+
+  <ion-item>
+    <ion-label stacked>Título</ion-label>
+    <ion-input placeholder=""></ion-input>
+  </ion-item>
   <ion-item>
     <ion-label stacked>Fecha de Creaciòn</ion-label>
     <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
@@ -27,5 +34,7 @@
     <ion-label stacked>Descripcion</ion-label>
     <ion-textarea name="descripcion" rows="6" required></ion-textarea>
   </ion-item>
-<button ion-button full>Aceptar</button>
+  <div padding>
+  <button ion-button full>Aceptar</button>
+  </div>
 </ion-content>

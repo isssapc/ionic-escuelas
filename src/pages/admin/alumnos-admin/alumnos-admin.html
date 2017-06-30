@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Alumnos</ion-title>
 
     <ion-buttons end>
@@ -16,7 +19,7 @@
     </ion-buttons>
   </ion-navbar>
 
-   <ion-toolbar color="Light">
+  <ion-toolbar color="Light">
     <ion-searchbar (input)="getItems($event)"></ion-searchbar>
   </ion-toolbar>
 
@@ -25,39 +28,39 @@
 
 
 <ion-content padding>
-  
+
   <ion-list>
     <ion-item (click)="gotoAlumnoAdmin()">
-      <ion-thumbnail item-start>
-        <img src="http://blog.aulaformativa.com/wp-content/uploads/2016/08/consideraciones-mejorar-primera-experiencia-de-usuario-aplicaciones-web-perfil-usuario.jpg">
-      </ion-thumbnail>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+      </ion-avatar>
       <h2>José Pedro Velasco Ramirez</h2>
       <p>1°B</p>
-      <button ion-button clear item-end>View</button>
+      <button ion-button clear item-end>PERFIL</button>
     </ion-item>
     <ion-item>
-      <ion-thumbnail item-start>
-        <img src="http://blog.aulaformativa.com/wp-content/uploads/2016/08/consideraciones-mejorar-primera-experiencia-de-usuario-aplicaciones-web-perfil-usuario.jpg">
-      </ion-thumbnail>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+      </ion-avatar>
       <h2>Maria de los Angeles López Castañón</h2>
       <p>1°B</p>
-      <button ion-button clear item-end>View</button>
+      <button ion-button clear item-end>PERFIL</button>
     </ion-item>
     <ion-item>
-      <ion-thumbnail item-start>
-        <img src="http://blog.aulaformativa.com/wp-content/uploads/2016/08/consideraciones-mejorar-primera-experiencia-de-usuario-aplicaciones-web-perfil-usuario.jpg">
-      </ion-thumbnail>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+      </ion-avatar>
       <h2>Humberto Perez Gutiérrez</h2>
       <p>1°B</p>
-      <button ion-button clear item-end>View</button>
+      <button ion-button clear item-end>PERFIL</button>
     </ion-item>
     <ion-item>
-      <ion-thumbnail item-start>
-        <img src="http://blog.aulaformativa.com/wp-content/uploads/2016/08/consideraciones-mejorar-primera-experiencia-de-usuario-aplicaciones-web-perfil-usuario.jpg">
-      </ion-thumbnail>
+      <ion-avatar item-start>
+        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+      </ion-avatar>
       <h2>Guillermo Najera Rodriguez</h2>
       <p>1°B</p>
-      <button ion-button clear item-end>View</button>
+      <button ion-button clear item-end>PERFIL</button>
     </ion-item>
   </ion-list>
 </ion-content>

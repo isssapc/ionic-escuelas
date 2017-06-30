@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Docente</ion-title>
   </ion-navbar>
 
@@ -15,7 +18,7 @@
 
 <ion-content padding>
 
-   <ion-list>
+  <ion-list>
 
     <ion-item>
       <ion-label stacked>Nombre</ion-label>
@@ -28,8 +31,8 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Fecha de nacimiento</ion-label>
-      <ion-input placeholder="20 de ferbrero de 1972"></ion-input>
+      <ion-label stacked>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
 
     <ion-item>
@@ -37,12 +40,12 @@
       <ion-input placeholder="FCH200274CHM04"></ion-input>
     </ion-item>
 
-   <ion-item>
+    <ion-item>
       <ion-label stacked>Género</ion-label>
       <ion-select [(ngModel)]="gaming">
         <ion-option value="m">Masculino</ion-option>
         <ion-option value="f">Femenino</ion-option>
-       
+
       </ion-select>
     </ion-item>
 

@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Alumno</ion-title>
   </ion-navbar>
 
@@ -15,7 +18,7 @@
 
 <ion-content padding>
 
-   <ion-list>
+  <ion-list>
 
     <ion-item>
       <ion-label stacked>Nombre</ion-label>
@@ -28,8 +31,8 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Fecha de nacimiento</ion-label>
-      <ion-input placeholder="20 de junio de 2010"></ion-input>
+      <ion-label stacked>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
 
     <ion-item>
@@ -42,15 +45,7 @@
       <ion-input placeholder="Masculino"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label stacked>Docente asignado</ion-label>
-      <ion-select [(ngModel)]="gaming">
-        <ion-option value="d1">Docente 1</ion-option>
-        <ion-option value="d2">Docente 2</ion-option>
-        <ion-option value="d3">Docente 3</ion-option>
-        <ion-option value="d4">Docente 4</ion-option>
-      </ion-select>
-    </ion-item>
+
 
   </ion-list>
 

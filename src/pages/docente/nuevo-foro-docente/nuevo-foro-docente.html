@@ -1,13 +1,10 @@
-<!--
-  Generated template for the NuevoForoDocentePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>nuevo-foro-docente</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Nuevo mensaje</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +12,15 @@
 
 <ion-content padding>
 
+  <ion-item>
+    <ion-label fixed>Tema</ion-label>
+    <ion-input type="Text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea name="" rows="6" required></ion-textarea>
+  </ion-item>
+  <div padding>
+<button ion-button full>Enviar</button>
+</div>
 </ion-content>

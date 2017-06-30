@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Perfil</ion-title>
 
     <ion-buttons end>
@@ -35,8 +38,8 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Fecha de nacimiento</ion-label>
-      <ion-input placeholder="20 de ferbrero de 1972"></ion-input>
+      <ion-label stacked>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
 
     <ion-item>

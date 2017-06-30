@@ -60,6 +60,7 @@ export class SchedulePage {
     });
   }
 
+
   presentFilter() {
     let modal = this.modalCtrl.create(ScheduleFilterPage, this.excludeTracks);
     modal.present();
@@ -72,7 +73,6 @@ export class SchedulePage {
     });
 
   }
-
   goToSessionDetail(sessionData: any) {
     // go to the session detail page
     // and pass in the session data

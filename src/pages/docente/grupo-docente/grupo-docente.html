@@ -7,91 +7,119 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>grupo-docente</ion-title>
-    
-  <ion-buttons end>
-      <button ion-button icon-only (click)="gotoNuevoForo()" *ngIf="segmento=='foros'">
-        <ion-icon name="add"></ion-icon>
-      </button> 
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Grupo</ion-title>
+
+    <ion-buttons end>
       <button ion-button icon-only (click)="gotoNuevoMensajeDocente()" *ngIf="segmento=='mensajes'">
         <ion-icon name="add"></ion-icon>
-      </button>     
-    </ion-buttons>    
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
   <div>
-      <ion-segment [(ngModel)]="segmento" color="primary">
-        <ion-segment-button value="materias">
-          Materias
-        </ion-segment-button>
-        <ion-segment-button value="foros">
-          Foros
-        </ion-segment-button>
-        <ion-segment-button value="mensajes">
-          Mensajes
-        </ion-segment-button>
-      </ion-segment>
-    </div>
-
-
-
-
-
+    <ion-segment [(ngModel)]="segmento" color="primary">
+      <ion-segment-button value="materias">
+        Materias
+      </ion-segment-button>
+      <ion-segment-button value="foros">
+        Foros
+      </ion-segment-button>
+      <ion-segment-button value="mensajes">
+        Mensajes
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 </ion-header>
 
 
 <ion-content padding>
+  <div [ngSwitch]="segmento">
+    <ion-list *ngSwitchCase="'materias'">
+      <ion-item (click)="gotoMateriaDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="book" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Materia uno</h2>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="book" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Materia dos</h2>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="book" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Materia tres</h2>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="book" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Materia cuatro</h2>
+      </ion-item>
+    </ion-list>
+  </div>
 
   <div [ngSwitch]="segmento">
-  <ion-list *ngSwitchCase="'materias'">
-    <ion-item (click)="gotoMateriaDocente()">  
-      <h2>Materia uno</h2>
-    </ion-item>
-     <ion-item>  
-      <h2>Materia dos</h2>
-    </ion-item>
-     <ion-item>  
-      <h2>Materia tres</h2>
-    </ion-item>
-     <ion-item>  
-      <h2>Materia cuatro</h2>
-    </ion-item>
+    <ion-list *ngSwitchCase="'foros'">
+      <button ion-item (click)="gotoForoDocente()">
+      <ion-icon class="icon-50" name="people" item-start></ion-icon> 
+    <h2>Alumnos</h2>
+    <h3>14 mensajes</h3>
+    <p>20 junio - último mensaje</p>
+  </button>
+      <button ion-item>
+      <ion-icon class="icon-50" name="people" item-start></ion-icon> 
+    <h2>Catedraticos</h2>
+    <h3>26 mensajes</h3>
+    <p>hoy 13:00 - último mensaje</p>
+  </button>
+      <button ion-item>
+      <ion-icon class="icon-50" name="people" item-start></ion-icon> 
+    <h2>Infraestructura</h2>
+    <h3>18 mensajes</h3>
+    <p>27 de junio - último mensaje</p>
+  </button>
+      <button ion-item>
+      <ion-icon class="icon-50" name="people" item-start></ion-icon> 
+    <h2>Padres de familia</h2>
+    <h3>8 mensajes</h3>
+    <p>26 junio - último mensaje</p>
+  </button>
+    </ion-list>
+  </div>
 
 
-
-    
-  </ion-list>
-   </div>
-
-  
 
   <div [ngSwitch]="segmento">
-  <ion-list *ngSwitchCase="'mensajes'">
-    <ion-item>  
-    <ion-avatar item-start>
-      <img src="http://img.freepik.com/iconos-gratis/usuario-la-forma-masculina-en-un-circulo-ios-7-simbolo-interfaz_318-35357.jpg?size=338&ext=jpg">
-    </ion-avatar>
-    <h2>Josè Lòpez</h2>
-    <h3>Grupo 1</h3>
-    <p>I've had a pretty messed up day. If we just...</p>
-    </ion-item> 
-    <ion-item>  
-    <ion-avatar item-start>
-      <img src="http://img.freepik.com/iconos-gratis/usuario-la-forma-masculina-en-un-circulo-ios-7-simbolo-interfaz_318-35357.jpg?size=338&ext=jpg">
-    </ion-avatar>
-    <h2>Esther Fernadez</h2>
-    <h3>Grupo 3</h3>
-    <p>I've had a pretty messed up day. If we just...</p>
-    </ion-item>  
-    <ion-item>  
-    <ion-avatar item-start>
-      <img src="http://img.freepik.com/iconos-gratis/usuario-la-forma-masculina-en-un-circulo-ios-7-simbolo-interfaz_318-35357.jpg?size=338&ext=jpg">
-    </ion-avatar>
-    <h2>Carlos Gutierrez</h2>
-    <h3>Grupo 4</h3>
-    <p>I've had a pretty messed up day. If we just...</p>
-    </ion-item>   
-  </ion-list>
+    <ion-list *ngSwitchCase="'mensajes'">
+      <ion-item (click)="gotoMensajeDocente()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-50" name="mail" item-start></ion-icon>
+        </ion-avatar>
+        <h2>José López</h2>
+        <h3>Horario</h3>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-50" name="mail" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Esther Fernadez</h2>
+        <h3>Justificar falta</h3>       
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-50" name="mail" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Carlos Gutierrez</h2>
+        <h3>Resultado del examen</h3>
+      </ion-item>
+    </ion-list>
   </div>
 
 

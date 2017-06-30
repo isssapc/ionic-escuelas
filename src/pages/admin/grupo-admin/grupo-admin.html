@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Grupo</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="gotoMateriaAdmin()">
@@ -43,10 +46,15 @@
       </ion-select>
     </ion-item>
 
+    <div padding>
+      <button ion-button color="light" (click)="AlumnosGrupoAdmin()">Alumnos del grupo</button>
+    </div>
+
   </ion-list>
 
   <div padding>
     <button ion-button full>Aceptar</button>
+    
   </div>
 
 

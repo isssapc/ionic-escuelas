@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Foros</ion-title>
   </ion-navbar>
 
@@ -14,32 +17,32 @@
 
 
 <ion-content padding>
-  
- <ion-list>
-  <button ion-item (click)="gotoForoAlumno()">
+
+  <ion-list>
+    <button ion-item (click)="gotoForoAlumno()">
       <ion-icon class="icon-50" name="people" item-start></ion-icon> 
     <h2>Alumnos</h2>
     <h3>14 mensajes</h3>
     <p>20 junio - último mensaje</p>
   </button>
-   <button ion-item>
+    <button ion-item>
       <ion-icon class="icon-50" name="people" item-start></ion-icon> 
     <h2>Catedraticos</h2>
     <h3>26 mensajes</h3>
     <p>hoy 13:00 - último mensaje</p>
   </button>
-   <button ion-item>
+    <button ion-item>
       <ion-icon class="icon-50" name="people" item-start></ion-icon> 
     <h2>Infraestructura</h2>
     <h3>18 mensajes</h3>
     <p>27 de junio - último mensaje</p>
   </button>
-   <button ion-item>
+    <button ion-item>
       <ion-icon class="icon-50" name="people" item-start></ion-icon> 
     <h2>Padres de familia</h2>
     <h3>8 mensajes</h3>
     <p>26 junio - último mensaje</p>
   </button>
-</ion-list>
+  </ion-list>
 
 </ion-content>

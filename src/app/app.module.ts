@@ -57,6 +57,10 @@ import { GrupoAdminPage } from "../pages/admin/grupo-admin/grupo-admin";
 import { AlumnoAdminPage } from "../pages/admin/alumno-admin/alumno-admin";
 import { DocenteAdminPage } from "../pages/admin/docente-admin/docente-admin";
 import { MateriaAdminPage } from "../pages/admin/materia-admin/materia-admin";
+import { ForoDocentePage } from "../pages/docente/foro-docente/foro-docente";
+import { ConversacionForoDocentePage } from "../pages/docente/conversacion-foro-docente/conversacion-foro-docente";
+import { MensajeDocentePage } from "../pages/docente/mensaje-docente/mensaje-docente";
+import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumnos-grupo-admin";
 
 
 @NgModule({
@@ -106,7 +110,11 @@ import { MateriaAdminPage } from "../pages/admin/materia-admin/materia-admin";
     GrupoAdminPage,
     AlumnoAdminPage,
     DocenteAdminPage,
-    MateriaAdminPage
+    MateriaAdminPage,
+    ForoDocentePage,
+    ConversacionForoDocentePage,
+    MensajeDocentePage,
+    AlumnosGrupoAdminPage
     
     
 
@@ -161,6 +169,11 @@ import { MateriaAdminPage } from "../pages/admin/materia-admin/materia-admin";
         { component: AlumnoAdminPage, name: 'AlumnoAdminPage', segment: 'alumno-admin' },
         { component: DocenteAdminPage, name: 'DocenteAdminPage', segment: 'docente-admin' },
         { component: MateriaAdminPage, name: 'MateriaAdminPage', segment: 'materia-admin' },
+        { component: ForoDocentePage, name: 'ForoDocentePage', segment: 'Foro-docente' },
+        { component: ConversacionForoDocentePage, name: 'ConversacionForoDocentePage', segment: 'conversacion-foro-doncente' },
+        { component: MensajeDocentePage, name: 'MensajeDocentePage', segment: 'mensaje-docente' },
+        { component: AlumnosGrupoAdminPage, name: 'AlumnosGrupoAdminPage', segment: 'alumnos-grupo-admin' },
+        
 
 
 
@@ -215,7 +228,11 @@ import { MateriaAdminPage } from "../pages/admin/materia-admin/materia-admin";
     GrupoAdminPage,
     AlumnoAdminPage,
     DocenteAdminPage,
-    MateriaAdminPage
+    MateriaAdminPage,
+    ForoDocentePage,
+    ConversacionForoDocentePage,
+    MensajeDocentePage,
+    AlumnosGrupoAdminPage
         
 
     

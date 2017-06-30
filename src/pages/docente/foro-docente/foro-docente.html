@@ -1,5 +1,5 @@
 <!--
-  Generated template for the ForoAlumnoPage page.
+  Generated template for the ForoDocentePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,24 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button menuToggle>
+      <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Foro</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="gotoNuevoMensajeForoAlumno()">
+      <button ion-button icon-only (click)="gotoNuevoForoDocente()">
         <ion-icon name="add"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
+
+   
 
 </ion-header>
 
 
 <ion-content padding>
 
-  <ion-list>
-    <button ion-item (click)="gotoConversacionForoAlumno()">
+   <ion-list>
+    <button ion-item (click)="gotoConversacionForoDocente()">
       <ion-icon class="icon-50" name="mail" item-start></ion-icon> 
     <h2>Promedio final para el 6°A</h2>
     <h3>14 mensajes</h3>
@@ -49,6 +51,5 @@
     <p>20 junio - último mensaje</p>
   </button>
   </ion-list>
-
 
 </ion-content>

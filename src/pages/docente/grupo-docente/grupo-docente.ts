@@ -37,4 +37,13 @@ this.navCtrl.push("NuevoMensajeDocentePage");
 
 }
 
+gotoForoDocente(){
+  this.navCtrl.push("ForoDocentePage");
+
+}
+
+gotoMensajeDocente(){
+  this.navCtrl.push("MensajeDocentePage");
+}
+
 }
