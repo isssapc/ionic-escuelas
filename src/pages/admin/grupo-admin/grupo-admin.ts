@@ -1,5 +1,5 @@
 import { Component,  ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController, list } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { AlumnosGrupoAdminPage } from "../alumnos-grupo-admin/alumnos-grupo-admin";
 
 
@@ -16,50 +16,25 @@ import { AlumnosGrupoAdminPage } from "../alumnos-grupo-admin/alumnos-grupo-admi
 })
 export class GrupoAdminPage {
 
-@ViewChild('scheduleList', { read: List }) scheduleList: List;
-
-  excludeTracks: any = [];
-  
-  
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController,) {
   }
 
-  
   ionViewDidLoad() {
     console.log('ionViewDidLoad GrupoAdminPage');
-     this.updateSchedule();
-
-    
-  }
-
-   updateSchedule() {
-    // Close any open sliding items when the schedule updates
-    this.scheduleList && this.scheduleList.closeSlidingItems();
-
-    this.confData.getTimeline(this.dayIndex, this.queryText, this.excludeTracks, this.segment).subscribe((data: any) => {
-      this.shownSessions = data.shownSessions;
-      this.groups = data.groups;
-    });
+  
   }
 
   gotoMateriaAdmin(){
     this.navCtrl.push("MateriaAdminPage");
    
   }
-  
-  
-  AlumnosGrupoAdmin() {
-    let modal = this.modalCtrl.create(AlumnosGrupoAdminPage, this.excludeTracks);
-    modal.present();
 
-    modal.onWillDismiss((data: any[]) => {
-      if (data) {
-        this.excludeTracks = data;
-        this.updateSchedule();
-      }
-    });
-
+  gotoAlumnosGrupoAdmin(){
+    this.navCtrl.push("AlumnosGrupoAdminPage");
   }
+  
+  
+
+
 
 }
