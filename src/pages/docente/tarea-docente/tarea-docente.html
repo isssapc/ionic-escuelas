@@ -7,16 +7,20 @@
 <ion-header>
 
   <ion-navbar>
+
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Tarea</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="editar()">
-        Editar
-      </button>
 
+    <ion-title>Tarea</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="editar()">Editar</button>
     </ion-buttons>
+
+    
+
+
   </ion-navbar>
 
 </ion-header>
@@ -41,7 +45,7 @@
     <ion-textarea name="descripcion" rows="6" required></ion-textarea>
   </ion-item>
   <div padding>
-  <button ion-button full>Aceptar</button>
+    <button ion-button full>Aceptar</button>
   </div>
 
 
