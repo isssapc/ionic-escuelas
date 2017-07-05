@@ -21,18 +21,58 @@
 
 
   <ion-list>
-    <button ion-item (click)="gotoTareaAlumno()">
-    <h2>Exposición</h2>
-    <p>Mtra. Carmen Cruz</p>
-     </button>
-    <button ion-item>
-    <h2>Investigación</h2>
-    <p>Mtro. Roberto López</p>
-     </button>
-    <button ion-item>
-    <h2>Lectura y resumen</h2>
-    <p>Mtro. Hector Ramirez</p>
-     </button>
+
+    <ion-item-sliding>
+      <ion-item (click)="gotoTareaAlumno()">
+        <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        <h2>Lectura y resumen</h2>
+        <p>Mtra. Carmen Cruz</p>
+        <p>25-06-2017 - Lectura y redaccion</p>
+        <ion-icon name="attach" item-end></ion-icon>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item (click)="gotoTareaAlumno()">
+        <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        <h2>Ensayo</h2>
+        <p>Mtra. Carmen Cruz</p>
+        <p>25-06-2017 - Lectura y redaccion</p>
+        <ion-icon name="attach" item-end></ion-icon>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item (click)="gotoTareaAlumno()">
+        <ion-icon class="icon-0" name="create" item-start></ion-icon>
+        <h2>Fracciones</h2>
+        <p>Mtro. José López</p>
+        <p>25-06-2017 - Matematicas</p>
+        <ion-icon name="" item-end></ion-icon>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
   </ion-list>
 
 </ion-content>
