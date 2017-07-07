@@ -24,7 +24,7 @@ export class NuevoGrupoAdminPage {
 Aula() {
     let prompt = this.alertCtrl.create({
       title: 'Agregar aula',
-      message: "Inserte en nombre del aula asignado al grupo",
+      message: "Inserte en nombre del aula",
       inputs: [
         {
           name: 'aula',

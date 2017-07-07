@@ -27,34 +27,71 @@
   </ion-list-header>
 
   <ion-list>
-     <ion-item (click)="gotoTareaDocente()">
+    <ion-item-sliding>
+      <ion-item (click)="gotoTareaDocente()">
         <ion-avatar item-start>
           <ion-icon class="icon-0" name="create" item-start></ion-icon>
         </ion-avatar>
         <h2>Exposición</h2>
         <p>Realizar una exposición con el tema asignado</p>
       </ion-item>
-      <ion-item (click)="gotoTareaDocente()">
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Borrar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item>
         <ion-avatar item-start>
           <ion-icon class="icon-0" name="create" item-start></ion-icon>
         </ion-avatar>
         <h2>Resumen</h2>
         <p>Resumen de la pag. 47 del libro de ciencias naturales</p>
       </ion-item>
-      <ion-item (click)="gotoTareaDocente()">
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Borrar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
         <ion-avatar item-start>
           <ion-icon class="icon-0" name="create" item-start></ion-icon>
         </ion-avatar>
         <h2>Ensayo</h2>
         <p>Ensayo sobre la patria mexicana</p>
       </ion-item>
-      <ion-item (click)="gotoTareaDocente()">
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Borrar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
         <ion-avatar item-start>
           <ion-icon class="icon-0" name="create" item-start></ion-icon>
         </ion-avatar>
-        <h2>Matematicas</h2>
-        <p>Fraciones</p>
+        <h2>Estudiar</h2>
+        <p>Pag 45 y 46 del libro</p>
       </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Borrar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
   </ion-list>
 
 </ion-content>

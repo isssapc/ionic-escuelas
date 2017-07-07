@@ -45,16 +45,32 @@
         <ion-option value="a4">Aula 4</ion-option>
       </ion-select>
     </ion-item>
+  
 
-    <div padding>
-      <button ion-button color="light" (click)="gotoAlumnosGrupoAdmin()">Alumnos del grupo</button>
-    </div>
-
+  
+    <ion-list-header>MATERIAS</ion-list-header>
+    <ion-item>
+      <p>Español</p>
+      <button ion-button clear item-end color="dark"><ion-icon name="close" ></ion-icon></button>
+    </ion-item>
+    <ion-item>
+      <p>Matematicas</p>
+      <button ion-button clear item-end color="dark"><ion-icon name="close" ></ion-icon></button>
+    </ion-item>
+    <ion-item>
+      <p>Geografia</p>
+      <button ion-button clear item-end color="dark"><ion-icon name="close"></ion-icon></button>
+    </ion-item>
   </ion-list>
 
-  <div padding>
+  <div>
+    <button ion-button color="light" (click)="gotoAlumnosGrupoAdmin()">Alumnos del grupo</button>
+  </div>
+
+
+
+  <div>
     <button ion-button full>Aceptar</button>
-    
   </div>
 
 

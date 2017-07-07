@@ -4,16 +4,8 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Docentes</ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="gotoNuevoDocenteAdmin()">
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
-
+    <ion-title>Alumnos inhabilitados</ion-title>
   </ion-navbar>
-
   <ion-toolbar color="Light">
     <ion-searchbar (input)="getItems($event)"></ion-searchbar>
   </ion-toolbar>
@@ -23,25 +15,26 @@
 
 <ion-content padding>
 
-
   <ion-list>
+
     <ion-item-sliding>
-      <ion-item (click)="gotoDocenteAdmin()">
+      <ion-item (click)="gotoAlumnoAdmin()">
         <ion-avatar item-start>
           <ion-icon class="icon-0" name="contact" item-start></ion-icon>
         </ion-avatar>
         <h2>José Pedro Velasco Ramirez</h2>
-        <p>Asignado al grupo 1</p>
-        <button ion-button clear item-end>PERFIL</button>
       </ion-item>
       <ion-item-options side="right">
+        <button ion-button color="secondary">
+        <ion-icon name="person"></ion-icon>
+        Habilitar
+      </button>
         <button ion-button color="danger">
         <ion-icon name="trash"></ion-icon>
         Eliminar
       </button>
       </ion-item-options>
     </ion-item-sliding>
-
 
     <ion-item-sliding>
       <ion-item>
@@ -49,17 +42,18 @@
           <ion-icon class="icon-0" name="contact" item-start></ion-icon>
         </ion-avatar>
         <h2>Maria de los Angeles López Castañón</h2>
-        <p>Asignado al grupo 2</p>
-        <button ion-button clear item-end>PERFIL</button>
       </ion-item>
       <ion-item-options side="right">
+        <button ion-button color="secondary">
+        <ion-icon name="person"></ion-icon>
+        Habilitar
+      </button>
         <button ion-button color="danger">
         <ion-icon name="trash"></ion-icon>
         Eliminar
       </button>
       </ion-item-options>
     </ion-item-sliding>
-
 
     <ion-item-sliding>
       <ion-item>
@@ -67,17 +61,18 @@
           <ion-icon class="icon-0" name="contact" item-start></ion-icon>
         </ion-avatar>
         <h2>Humberto Perez Gutiérrez</h2>
-        <p>Asignado al grupo 3</p>
-        <button ion-button clear item-end>PERFIL</button>
       </ion-item>
       <ion-item-options side="right">
+        <button ion-button color="secondary">
+        <ion-icon name="person"></ion-icon>
+        Habilitar
+      </button>
         <button ion-button color="danger">
         <ion-icon name="trash"></ion-icon>
         Eliminar
       </button>
       </ion-item-options>
     </ion-item-sliding>
-
 
     <ion-item-sliding>
       <ion-item>
@@ -85,17 +80,18 @@
           <ion-icon class="icon-0" name="contact" item-start></ion-icon>
         </ion-avatar>
         <h2>Guillermo Najera Rodriguez</h2>
-        <p>Asignado al grupo 4</p>
-        <button ion-button clear item-end>PERFIL</button>
       </ion-item>
       <ion-item-options side="right">
+        <button ion-button color="secondary">
+        <ion-icon name="person"></ion-icon>
+        Habilitar
+      </button>
         <button ion-button color="danger">
         <ion-icon name="trash"></ion-icon>
         Eliminar
       </button>
       </ion-item-options>
     </ion-item-sliding>
-
 
 
   </ion-list>

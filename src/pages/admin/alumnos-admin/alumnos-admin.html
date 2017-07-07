@@ -30,37 +30,75 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item (click)="gotoAlumnoAdmin()">
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
-      </ion-avatar>
-      <h2>José Pedro Velasco Ramirez</h2>
-      <p>1°B</p>
-      <button ion-button clear item-end>PERFIL</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
-      </ion-avatar>
-      <h2>Maria de los Angeles López Castañón</h2>
-      <p>1°B</p>
-      <button ion-button clear item-end>PERFIL</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
-      </ion-avatar>
-      <h2>Humberto Perez Gutiérrez</h2>
-      <p>1°B</p>
-      <button ion-button clear item-end>PERFIL</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="contact" item-start></ion-icon>
-      </ion-avatar>
-      <h2>Guillermo Najera Rodriguez</h2>
-      <p>1°B</p>
-      <button ion-button clear item-end>PERFIL</button>
-    </ion-item>
+
+    <ion-item-sliding>
+      <ion-item (click)="gotoAlumnoAdmin()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+        </ion-avatar>
+        <h2>José Pedro Velasco Ramirez</h2>
+        <p>1°B</p>
+        <button ion-button clear item-end>PERFIL</button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light">
+        <ion-icon name="person"></ion-icon>
+        Inhabilitar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Maria de los Angeles López Castañón</h2>
+        <p>1°B</p>
+        <button ion-button clear item-end>PERFIL</button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light">
+        <ion-icon name="person"></ion-icon>
+        Inhabilitar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Humberto Perez Gutiérrez</h2>
+        <p>1°B</p>
+        <button ion-button clear item-end>PERFIL</button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light">
+        <ion-icon name="person"></ion-icon>
+        Inhabilitar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="contact" item-start></ion-icon>
+        </ion-avatar>
+        <h2>Guillermo Najera Rodriguez</h2>
+        <p>1°B</p>
+        <button ion-button clear item-end>PERFIL</button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light">
+        <ion-icon name="person"></ion-icon>
+        Inhabilitar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
   </ion-list>
 </ion-content>

@@ -28,6 +28,7 @@ import { CalendarioAlumnoPage } from "../pages/alumno/calendario-alumno/calendar
 import { PerfilAlumnoPage } from "../pages/alumno/perfil-alumno/perfil-alumno";
 import { GruposDocentePage } from "../pages/docente/grupos-docente/grupos-docente";
 import { PerfilDocentePage } from "../pages/docente/perfil-docente/perfil-docente";
+import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilidados-admin/alumnos-inhabilidados-admin";
 
 export interface PageInterface {
   title: string;
@@ -53,22 +54,23 @@ export class ConferenceApp {
   // the login page disables the left menu
 
   adminPages: PageInterface[] = [
-    { title: 'Grupos', name: 'GruposAdminPage', component: GruposAdminPage,  icon: 'calendar' },
-    { title: 'Alumnos', name: 'AlumnosAdminPage', component: AlumnosAdminPage,  icon: 'contacts' },
-    { title: 'Docentes', name: 'DocentesAdminPage', component: DocentesAdminPage,  icon: 'map' },
+    { title: 'Grupos', name: 'GruposAdminPage', component: GruposAdminPage,  icon: 'people' },
+    { title: 'Alumnos', name: 'AlumnosAdminPage', component: AlumnosAdminPage,  icon: 'people' },
+    { title: 'Docentes', name: 'DocentesAdminPage', component: DocentesAdminPage,  icon: 'people' },
+    { title: 'Alumnos inhabilitados', name: 'AlumnosInhabilidadosAdminPage', component: AlumnosInhabilidadosAdminPage,  icon: 'people' },
   ];
 
   docentePages: PageInterface[] = [
-    { title: 'Perfil', name: 'PerfilDocentePage', component: PerfilDocentePage,  icon: 'calendar' },
-    { title: 'Grupos', name: 'GruposDocentePage', component: GruposDocentePage,  icon: 'contacts' },
+    { title: 'Perfil', name: 'PerfilDocentePage', component: PerfilDocentePage,  icon: 'person' },
+    { title: 'Grupos', name: 'GruposDocentePage', component: GruposDocentePage,  icon: 'bookmark' },
   ];
 
   alumnoPages: PageInterface[] = [
-    { title: 'Perfil', name: 'PerfilAlumnoPage', component: PerfilAlumnoPage,  icon: 'calendar' },
-    { title: 'Calendario', name: 'CalendarioAlumnoPage', component: CalendarioAlumnoPage,  icon: 'contacts' },
-    { title: 'Tareas', name: 'TareasAlumnoPage', component: TareasAlumnoPage,  icon: 'map' },
-    { title: 'Mensajes', name: 'MensajesAlumnoPage', component: MensajesAlumnoPage,  icon: 'map' },
-    { title: 'Foros', name: 'ForosAlumnoPage', component: ForosAlumnoPage,  icon: 'map' },
+    { title: 'Perfil', name: 'PerfilAlumnoPage', component: PerfilAlumnoPage,  icon: 'person' },
+    { title: 'Calendario', name: 'CalendarioAlumnoPage', component: CalendarioAlumnoPage,  icon: 'calendar' },
+    { title: 'Tareas', name: 'TareasAlumnoPage', component: TareasAlumnoPage,  icon: 'create' },
+    { title: 'Mensajes', name: 'MensajesAlumnoPage', component: MensajesAlumnoPage,  icon: 'mail' },
+    { title: 'Foros', name: 'ForosAlumnoPage', component: ForosAlumnoPage,  icon: 'megaphone' },
   ];
 
 

@@ -61,6 +61,7 @@ import { ForoDocentePage } from "../pages/docente/foro-docente/foro-docente";
 import { ConversacionForoDocentePage } from "../pages/docente/conversacion-foro-docente/conversacion-foro-docente";
 import { MensajeDocentePage } from "../pages/docente/mensaje-docente/mensaje-docente";
 import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumnos-grupo-admin";
+import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilidados-admin/alumnos-inhabilidados-admin";
 
 
 @NgModule({
@@ -114,7 +115,9 @@ import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumno
     ForoDocentePage,
     ConversacionForoDocentePage,
     MensajeDocentePage,
-    AlumnosGrupoAdminPage
+    AlumnosGrupoAdminPage,
+    AlumnosInhabilidadosAdminPage
+
     
     
 
@@ -173,6 +176,7 @@ import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumno
         { component: ConversacionForoDocentePage, name: 'ConversacionForoDocentePage', segment: 'conversacion-foro-doncente' },
         { component: MensajeDocentePage, name: 'MensajeDocentePage', segment: 'mensaje-docente' },
         { component: AlumnosGrupoAdminPage, name: 'AlumnosGrupoAdminPage', segment: 'alumnos-grupo-admin' },
+        { component: AlumnosInhabilidadosAdminPage, name: 'AlumnosInhabilidadosAdminPage', segment: 'alumnos-inhabilitados-admin' },
         
 
 
@@ -232,7 +236,8 @@ import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumno
     ForoDocentePage,
     ConversacionForoDocentePage,
     MensajeDocentePage,
-    AlumnosGrupoAdminPage
+    AlumnosGrupoAdminPage,
+    AlumnosInhabilidadosAdminPage
         
 
     

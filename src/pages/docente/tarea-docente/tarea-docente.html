@@ -19,7 +19,7 @@
     </ion-buttons>
 
     <ion-buttons ion-button end>
-      <ion-icon class="icon-50"name="attach"></ion-icon>
+      <ion-icon class="icon-50" name="attach"></ion-icon>
     </ion-buttons>
 
 
@@ -46,6 +46,28 @@
     <ion-label stacked>Descripcion</ion-label>
     <ion-textarea name="descripcion" rows="6" required></ion-textarea>
   </ion-item>
+
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <ion-icon name="cloud"></ion-icon>
+        </ion-thumbnail>
+        <h2>Archivo.pdf</h2>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Borrar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+
+
   <div padding>
     <button ion-button full>Aceptar</button>
   </div>
