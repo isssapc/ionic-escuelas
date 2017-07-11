@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-     <button ion-button menuToggle>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Conversación</ion-title>
@@ -14,7 +14,7 @@
     </ion-buttons>
 
   </ion-navbar>
-
+ 
 </ion-header>
 
 
@@ -24,7 +24,11 @@
 
   <ion-list>
     <ion-list-header>
-      Mensaje
+      <ion-row>
+        <ion-col>Mensaje</ion-col>
+        <ion-col><ion-note>24 de junio de 2017</ion-note></ion-col>
+        </ion-row>
+      
     </ion-list-header>
 
     <ion-item>
@@ -43,22 +47,24 @@
       <ion-textarea name="descripcion" rows="6" required placeholder="El promedio final del ciclo escolar 2016-2017 para el 6°A sera entragado mañana a primera hora"></ion-textarea>
     </ion-item>
 
+    <button float-right small ion-button color="primary">Borrar</button>
+
     <button ion-button float-right icon-start>
         <ion-icon name="text"></ion-icon>
-       Responder
-      </button>
+        Responder
+        </button>
 
   </ion-list>
 
   <ion-list>
-    
+
     <ion-list-header>
       Respuestas
     </ion-list-header>
 
 
 
-    <ion-item>
+    <ion-item class="margin">
       <ion-label stacked>
         <h2>Roberto López:</h2>
         <p>Gracias por la información</p>
@@ -67,17 +73,17 @@
     <div float-right>
       <ion-row>
         <ion-col>
-          <button no-padding small ion-button color="primary">Borrar</button>
+          <button small ion-button color="primary">Borrar</button>
         </ion-col>
         <ion-col>
           <ion-note>
-            11h ago
+            hace 11 hrs
           </ion-note>
         </ion-col>
       </ion-row>
     </div>
 
-    <ion-item>
+    <ion-item class="margin">
       <ion-label stacked>
         <h2>José Perez:</h2>
         <p>Gracias, nos vemos mañana temprano</p>
@@ -86,7 +92,7 @@
     <div float-right>
       <ion-row>
         <ion-col>
-          <button no-padding small ion-button color="primary">Borrar</button>
+          <button small ion-button color="primary">Borrar</button>
         </ion-col>
         <ion-col>
           <ion-note>
@@ -96,7 +102,7 @@
       </ion-row>
     </div>
 
-    <ion-item>
+    <ion-item class="margin">
       <ion-label stacked>
         <h2>Julia Dominguez:</h2>
         <p>Gracias por la información</p>
@@ -105,7 +111,7 @@
     <div float-right>
       <ion-row>
         <ion-col>
-          <button no-padding small ion-button color="primary">Borrar</button>
+          <button small ion-button color="primary">Borrar</button>
         </ion-col>
         <ion-col>
           <ion-note>

@@ -30,25 +30,28 @@
 
 <ion-content padding>
 
-  <ion-item>
-    <ion-label stacked>Título</ion-label>
-    <ion-input placeholder="Exposición"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label stacked>Fecha de Creaciòn</ion-label>
-    <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
-  </ion-item>
-  <ion-item>
-    <ion-label stacked>Fecha de entrega</ion-label>
-    <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
-  </ion-item>
-  <ion-item>
-    <ion-label stacked>Descripcion</ion-label>
-    <ion-textarea name="descripcion" rows="6" required></ion-textarea>
-  </ion-item>
-
-
   <ion-list>
+    <ion-item>
+      <ion-label stacked>Título</ion-label>
+      <ion-input placeholder="Exposición"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Fecha de Creaciòn</ion-label>
+      <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Fecha de entrega</ion-label>
+      <ion-datetime displayFormat="MMM-DDD" [(ngModel)]="myDate"></ion-datetime>>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Descripcion</ion-label>
+      <ion-textarea name="descripcion" rows="6" required></ion-textarea>
+    </ion-item>
+
+
+
+    <ion-list-header no-lines>Archivo adjunto</ion-list-header>
+
     <ion-item-sliding>
       <ion-item>
         <ion-thumbnail item-start>

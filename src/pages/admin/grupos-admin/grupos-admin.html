@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-   <button ion-button menuToggle>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Grupos</ion-title>
@@ -23,31 +23,67 @@
 
 <ion-content>
 
-  <ion-list no-lines>
-    <ion-item (click)="gotoGrupoAdmin()">
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
-      </ion-avatar>
-      Grupo 1
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
-      </ion-avatar>
-      Grupo 2
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
-      </ion-avatar>
-      Grupo 3
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
-      </ion-avatar>
-      Grupo 4
-    </ion-item>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item (click)="gotoGrupoAdmin()">
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+        </ion-avatar>
+        Grupo 1
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+        </ion-avatar>
+        Grupo 2
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+        </ion-avatar>
+        Grupo 3
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon class="icon-0" name="bookmark" item-start></ion-icon>
+        </ion-avatar>
+        Grupo 4
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+        Eliminar
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
 
   </ion-list>
 

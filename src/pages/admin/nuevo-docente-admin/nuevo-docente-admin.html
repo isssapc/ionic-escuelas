@@ -26,6 +26,11 @@
     </ion-item>
 
     <ion-item>
+      <ion-label stacked>Apellido</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
       <ion-label stacked>Profesiòn</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
@@ -41,14 +46,20 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Gènero</ion-label>
+      <ion-label stacked>Género</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
 
-  </ion-list>
+    <div padding>
+      <button ion-button color="light" (click)="showCheckbox()">Asignación de grupo</button>
+    </div>
 
-  <div padding>
-    <button ion-button full>Aceptar</button>
-  </div>
+
+
+
+    <div>
+      <button ion-button full>Aceptar</button>
+    </div>
+  </ion-list>
 
 </ion-content>

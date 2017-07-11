@@ -26,6 +26,11 @@
 
   <ion-list>
 
+      <ion-item>
+      <ion-label stacked>Nombre del grupo</ion-label>
+      <ion-input placeholder="Grupo 1"></ion-input>
+    </ion-item>
+
     <ion-item>
       <ion-label stacked>Docente asignado</ion-label>
       <ion-select [(ngModel)]="gaming">
@@ -36,16 +41,11 @@
       </ion-select>
     </ion-item>
 
-    <ion-item>
-      <ion-label stacked>Aula Asignada</ion-label>
-      <ion-select [(ngModel)]="gaming">
-        <ion-option value="a1">Aula 1</ion-option>
-        <ion-option value="a2">Aula 2</ion-option>
-        <ion-option value="a3">Aula 3</ion-option>
-        <ion-option value="a4">Aula 4</ion-option>
-      </ion-select>
+     <ion-item>
+      <ion-label stacked>Aula asignada</ion-label>
+      <ion-input placeholder="4"></ion-input>
     </ion-item>
-  
+
 
   
     <ion-list-header>MATERIAS</ion-list-header>

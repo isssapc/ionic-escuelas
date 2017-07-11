@@ -62,6 +62,12 @@ import { ConversacionForoDocentePage } from "../pages/docente/conversacion-foro-
 import { MensajeDocentePage } from "../pages/docente/mensaje-docente/mensaje-docente";
 import { AlumnosGrupoAdminPage } from "../pages/admin/alumnos-grupo-admin/alumnos-grupo-admin";
 import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilidados-admin/alumnos-inhabilidados-admin";
+import { InicioPage } from "../pages/portada/inicio/inicio";
+import { RegistrasePage } from "../pages/portada/registrase/registrase";
+import { ForosAdminPage } from "../pages/admin/foros-admin/foros-admin";
+import { ForoAdminPage } from "../pages/admin/foro-admin/foro-admin";
+import { ConversacionForoAdminPage } from "../pages/admin/conversacion-foro-admin/conversacion-foro-admin";
+
 
 
 @NgModule({
@@ -116,7 +122,15 @@ import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilida
     ConversacionForoDocentePage,
     MensajeDocentePage,
     AlumnosGrupoAdminPage,
-    AlumnosInhabilidadosAdminPage
+    AlumnosInhabilidadosAdminPage,
+    InicioPage,
+    RegistrasePage,
+    ForosAdminPage,
+    ForoAdminPage,
+    ConversacionForoAdminPage
+
+  
+    
 
     
     
@@ -177,6 +191,10 @@ import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilida
         { component: MensajeDocentePage, name: 'MensajeDocentePage', segment: 'mensaje-docente' },
         { component: AlumnosGrupoAdminPage, name: 'AlumnosGrupoAdminPage', segment: 'alumnos-grupo-admin' },
         { component: AlumnosInhabilidadosAdminPage, name: 'AlumnosInhabilidadosAdminPage', segment: 'alumnos-inhabilitados-admin' },
+        { component: InicioPage, name: 'InicioPage', segment: 'inicio' },
+        { component: RegistrasePage, name: 'RegistrasePage', segment: 'registrarse' },
+        { component: ForosAdminPage, name: 'ForosAdmin', segment: 'foros-admin' },
+        { component: ForoAdminPage, name: 'ForoAdminPage', segment: 'foro-admin' },
         
 
 
@@ -237,7 +255,13 @@ import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilida
     ConversacionForoDocentePage,
     MensajeDocentePage,
     AlumnosGrupoAdminPage,
-    AlumnosInhabilidadosAdminPage
+    AlumnosInhabilidadosAdminPage,
+    InicioPage,
+    RegistrasePage,
+    ForosAdminPage,
+    ForoAdminPage,
+    ConversacionForoAdminPage
+    
         
 
     

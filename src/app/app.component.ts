@@ -29,6 +29,9 @@ import { PerfilAlumnoPage } from "../pages/alumno/perfil-alumno/perfil-alumno";
 import { GruposDocentePage } from "../pages/docente/grupos-docente/grupos-docente";
 import { PerfilDocentePage } from "../pages/docente/perfil-docente/perfil-docente";
 import { AlumnosInhabilidadosAdminPage } from "../pages/admin/alumnos-inhabilidados-admin/alumnos-inhabilidados-admin";
+import { InicioPage } from "../pages/portada/inicio/inicio";
+
+
 
 export interface PageInterface {
   title: string;
@@ -111,7 +114,7 @@ export class ConferenceApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
-          this.rootPage = TabsPage;
+          this.rootPage =InicioPage;
         } else {
           this.rootPage = TutorialPage;
         }
